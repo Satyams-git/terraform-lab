@@ -1,19 +1,20 @@
-# Terraform
+# Terraform state files
 *.tfstate
 *.tfstate.backup
+
+# Terraform local directories
 .terraform/
+**/.terraform/*
+**/.terraform/modules/*
+**/.terraform/providers/*
+
+# Lock file (can be optional)
 .terraform.lock.hcl
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+terraform.tfvars
 
 # Crash logs
 crash.log
-
-# Ignore local variables
-tfvars.json
-*.tfvars
-
-# Ignore module directories
-**/.terraform/*
-**/.terraform/modules/*
-
-# Ignore provider plugins
-**/.terraform/providers/*
